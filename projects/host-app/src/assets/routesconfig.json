@@ -1,0 +1,9 @@
+[
+  {
+    "path": "todo-list",
+    "remoteEntry": "https://mfe123456789.netlify.app/remoteEntry.js",
+    "remoteName": "mfeApp",
+    "exposedModule": "./TodoListModule",
+    "module": "TodoListModule"
+  }
+]
