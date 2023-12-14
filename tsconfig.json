@@ -20,7 +20,6 @@
     "useDefineForClassFields": false,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
     "lib": [
       "ES2022",
       "dom"

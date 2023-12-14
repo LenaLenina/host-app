@@ -12,7 +12,7 @@ module.exports = {
   output: {
     uniqueName: "hostApp",
     publicPath: "auto",
-    scriptType: "text/javascript",
+    scriptType: "text/javascript", // !!!!! needed for rid from console error. see in Error_Screenshot.png
   },
   optimization: {
     runtimeChunk: false
@@ -28,17 +28,7 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
 
-        // For remotes (please adjust)
         name: "hostApp",
-        // filename: "remoteEntry.js",
-        // exposes: {
-        //     './Component': './projects/host-app/src/app/app.component.ts',
-        // },        
-        
-        // For hosts (please adjust)
-        // remotes: {
-        //     "mfeApp": "http://localhost:4300/remoteEntry.js",
-        // },
 
         shared: share({
           "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
